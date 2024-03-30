@@ -103,7 +103,7 @@ def get_morphData():
     return response.json()["items"]  
 
 # Define the endpoint to return the scraped data
-@app.route('/scrape', methods=['GET'])
+@app.route('/', methods=['GET'])
 def scrape():
     all_data = []
     
